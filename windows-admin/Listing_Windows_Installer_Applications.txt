@@ -1,0 +1,18 @@
+Get-CimInstance -Class Win32_Product |
+  Where-Object Name -eq "Microsoft .NET Core Runtime - 2.1.5 (x64)"
+
+or
+
+Get-CimInstance -Class Win32_Product |
+  Where-Object Name -eq "Microsoft .NET Core Runtime - 2.1.5 (x64)" |
+    Format-List -Property *
+
+or
+
+Get-CimInstance -Class Win32_Product -Filter "Name='Microsoft .NET Core Runtime - 2.1.5 (x64)'" |
+  Format-List -Property *
+
+or
+
+Get-CimInstance -Class Win32_Product  -Filter "Name='Microsoft .NET Core Runtime - 2.1.5 (x64)'" |
+  Format-List -Property Name,InstallDate,InstallLocation,PackageCache,Vendor,Version,IdentifyingNumber
