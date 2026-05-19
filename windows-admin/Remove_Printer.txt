@@ -1,0 +1,1 @@
+(New-Object -ComObject WScript.Network).RemovePrinterConnection("\\Printserver01\Xerox5")
