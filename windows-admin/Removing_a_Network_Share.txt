@@ -1,0 +1,2 @@
+$wql = 'SELECT * from Win32_Share WHERE Name="TempShare"'
+Invoke-CimMethod -MethodName Delete -Query $wql
