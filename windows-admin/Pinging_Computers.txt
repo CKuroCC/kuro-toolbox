@@ -1,0 +1,21 @@
+Get-CimInstance -Class Win32_PingStatus -Filter "Address='127.0.0.1'"
+
+or
+
+Get-CimInstance -Class Win32_PingStatus -Filter "Address='127.0.0.1'" |
+  Format-Table -Property Address,ResponseTime,StatusCode -Autosize
+
+or
+
+Get-CimInstance -Class Win32_PingStatus -Filter "Address='127.0.0.1'" |
+  Format-Table -Property Address,ResponseTime,StatusCode -Autosize
+
+or
+
+1..254| ForEach-Object -Process {
+  Get-CimInstance -Class Win32_PingStatus -Filter ("Address='192.168.1.$_'") } |
+    Select-Object -Property Address,ResponseTime,StatusCode
+
+or
+
+$ips = 1..254 | ForEach-Object -Process {'192.168.1.' + $_}
