@@ -1,0 +1,2 @@
+$wql = 'SELECT * from Win32_NetworkAdapterConfiguration WHERE IPEnabled=True and DHCPEnabled=False'
+Invoke-CimMethod -MethodName ReleaseDHCPLease -Query $wql
