@@ -1,0 +1,13 @@
+New-PSDrive -Name Uninstall -PSProvider Registry -Root HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall
+
+or
+
+(Get-ChildItem -Path Uninstall:).Count
+
+or
+
+$UninstallableApplications = Get-ChildItem -Path Uninstall:
+
+or
+
+$UninstallableApplications | ForEach-Object -Process { $_.GetValue('DisplayName') }
