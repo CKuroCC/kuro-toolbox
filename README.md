@@ -1,36 +1,31 @@
-# Hi, I'm Julian (C-Kuro) 👋
+# kuro-toolbox
 
-## 🚀 About Me
-- **Tech Ninja** 🖥️: Skilled in Python, cybersecurity, and all things tech, especially those involving challenges and creativity.
-- **Creative** 🎨: I make dark, glitch art and chopped and screwed music, pulling from strong emotions and glitching reality in the process.
-- **Gamer** 🎮: An avid gamer, I thrive on strategy, logic, and the thrill of competitive PvP, especially in challenging games like Elden Ring.
-- **Cyber Security** 🔒: Deep into the world of cybersecurity—building and breaking things to understand how they work.
-- **Animal Lover** 🐾: Aspiring to own land with a house full of animals, bringing harmony between tech and nature.
+> Personal IT / dev / cybersec notebook — Python utilities, Windows admin notes, Flipper Zero FAQ.
 
-## 💻 What I Do
-- **Python Dev**: Automating tasks, building tools, and creating experiments that merge creativity with functionality.
-- **Cybersecurity Enthusiast**: I'm always exploring new ways to keep systems secure, while experimenting with rogue firmware and tools like Flipper Zero.
-- **Artist**: I create glitch art that reflects complexity, confusion, and moments of bliss, often mirroring my music and game experiences.
+A consolidated grab-bag of scripts and notes from my IT career and side projects. Nothing here is a polished product; it's working kit I've reached for more than once.
 
-## 🌐 My Projects
-- **C-Kuro Platform**: A media platform designed to showcase collaborative art and enable artists to earn independently.
-- **Nergal-Adam-Nergalton-Sr (Python Branch)**: A deep dive into Python projects, automation, and cybersecurity experiments.
-- **Flipper Zero Adventures**: Experimenting with Flipper Zero and Rogue Master firmware to push the boundaries of what's possible.
+## Contents
 
-## 🎶 Music
-I create chopped and screwed music, which I think of as a "glitched" version of hip-hop or techno. It’s dark, emotional, and perfectly imperfect.
+### `python/`
+Small Python utilities I've built or collected for everyday tasks.
 
-## ⚡ Fun Facts
-- **Techwear Aficionado**: I love fashion, especially techwear, that lets me merge my love for technology with style.
-- **Gundam Fan**: Deep into the world of mechs, Gundam, and giant robots—combining engineering, power, and art.
-- **Future Goals**: Living a meaningful life, balancing tech, art, and family with love, laughter, and creativity.
+- `Extract_Text_from_PDF.py` / `Extract_Text_from_2_PDFs.py` — pull text out of PDF files
+- `Filter_Text.py` — text filtering helper
+- `Find_Email_Addresses.py` / `Find_Phone_Number.py` / `Locate_Address.py` — pattern-match contact info out of text
+- `GenerateStrongPass.py` — strong password generator
+- `Pydub_Audio_Manipulation.py` — audio manipulation via `pydub`
+- `TestNetworkSpeed.py` — quick network speed check
 
-## 🔧 Tech Stack
-- **Languages**: Python, Bash
-- **Tools**: GitHub, Flipper Zero, Rogue Master firmware
-- **OS**: Windows, Linux
-- **Tech Interests**: Home server setups, security, automation, game development
+### `windows-admin/`
+Notes and command snippets from real Windows IT work — DHCP and network adapter config, user / share / printer management, software install + uninstall, security hardening, Windows install + maintenance reference.
 
----
+### `flipper-zero/`
+- `FAQ.md` — leveling up with Flipper Zero (capabilities, firmware notes, what's possible).
 
-### Let's connect, collaborate, and build something amazing together! 🔥
+## History
+
+This was the day-one repo on my GitHub account, originally split across several branches that never merged. Consolidated 2026-05-19 into the folder structure above. Source branches (`Shnissugah`, `Squirtle`, `Flipper-Zero-Level-Up-FAQ`) are preserved untouched as history.
+
+## License
+
+See `LICENSE` (lands in a separate hygiene pass). Notes and snippets are CC-BY-4.0 unless a file says otherwise.
