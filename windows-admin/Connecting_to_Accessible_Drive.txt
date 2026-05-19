@@ -1,0 +1,5 @@
+New-PSDrive -Name "X" -PSProvider "FileSystem" -Root "\\Server01\Public"
+
+or
+
+New-PSDrive -Persist -Name "X" -PSProvider "FileSystem" -Root "\\Server01\Public"
