@@ -1,0 +1,3 @@
+Restart-Computer
+or
+Restart-Computer -Force
